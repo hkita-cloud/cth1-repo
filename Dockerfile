@@ -7,7 +7,7 @@ RUN apk --no-cache add curl
 
 # Stage 2: Final stage
 #FROM nginx:alpine
-FROM nginx:latest
+FROM nginx:alpine
 
 # index.htmlをローカルディレクトリからNginxのHTMLフォルダにコピーする。
 COPY ./index.html /usr/share/nginx/html/index.html
